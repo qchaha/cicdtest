@@ -3,7 +3,6 @@
 <property name="pdepend" value="pdepend"/>
 <property name="phpcpd" value="phpcpd"/>
 <property name="phpcs" value="phpcs"/>
-<property name="phpdox" value="phpdox"/>
 <property name="phploc" value="phploc"/>
 <property name="phpmd" value="phpmd"/>
 <property name="phpunit" value="phpunit"/>
@@ -18,17 +17,16 @@
  <property name="phpunit" value="${basedir}/build/tools/phpunit.phar"/> 
 -->
 <!--
- Use this when the tools are managed by Composer in ${basedir}/vendor/bin
+ Use this when the tools are managed by Composer in ${basedir}/vendor/bin-->
  <property name="pdepend" value="${basedir}/vendor/bin/pdepend"/>
  <property name="phpcpd"  value="${basedir}/vendor/bin/phpcpd"/>
  <property name="phpcs"   value="${basedir}/vendor/bin/phpcs"/>
- <property name="phpdox"  value="${basedir}/vendor/bin/phpdox"/>
  <property name="phploc"  value="${basedir}/vendor/bin/phploc"/>
  <property name="phpmd"   value="${basedir}/vendor/bin/phpmd"/>
  <property name="phpunit" value="${basedir}/vendor/bin/phpunit"/> 
--->
-<target name="full-build" depends="prepare,static-analysis,phpunit,phpdox,-check-failure" description="Performs static analysis, runs the tests, and generates project documentation"/>
-<target name="full-build-parallel" depends="prepare,static-analysis-parallel,phpunit,phpdox,-check-failure" description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation"/>
+
+<target name="full-build" depends="prepare,static-analysis,phpunit,-check-failure" description="Performs static analysis, runs the tests, and generates project documentation"/>
+<target name="full-build-parallel" depends="prepare,static-analysis-parallel,phpunit,-check-failure" description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation"/>
 <target name="quick-build" depends="prepare,lint,phpunit-no-coverage" description="Performs a lint check and runs the tests (without generating code coverage reports)"/>
 <target name="static-analysis" depends="lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci" description="Performs static analysis"/>
 <!--
@@ -51,7 +49,6 @@
 <delete dir="${basedir}/build/coverage"/>
 <delete dir="${basedir}/build/logs"/>
 <delete dir="${basedir}/build/pdepend"/>
-<delete dir="${basedir}/build/phpdox"/>
 <property name="clean.done" value="true"/>
 </target>
 <target name="prepare" unless="prepare.done" depends="clean" description="Prepare for build">
@@ -59,7 +56,6 @@
 <mkdir dir="${basedir}/build/coverage"/>
 <mkdir dir="${basedir}/build/logs"/>
 <mkdir dir="${basedir}/build/pdepend"/>
-<mkdir dir="${basedir}/build/phpdox"/>
 <property name="prepare.done" value="true"/>
 </target>
 <target name="lint" unless="lint.done" description="Perform syntax check of sourcecode files">
@@ -173,10 +169,6 @@
 <arg value="--no-coverage"/>
 </exec>
 <property name="phpunit.done" value="true"/>
-</target>
-<target name="phpdox" unless="phpdox.done" depends="phploc-ci,phpcs-ci,phpmd-ci" description="Generate project documentation using phpDox">
-<exec executable="${phpdox}" dir="${basedir}/build" taskname="phpdox"/>
-<property name="phpdox.done" value="true"/>
 </target>
 <target name="-check-failure">
 <fail message="PHPUnit did not finish successfully">
