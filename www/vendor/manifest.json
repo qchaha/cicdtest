@@ -1,0 +1,82 @@
+{
+  "name": "vendors",
+  "content": {
+    "./node_modules/process/browser.js": {
+      "id": 0,
+      "meta": {}
+    },
+    "./node_modules/webpack/buildin/global.js": {
+      "id": 1,
+      "meta": {}
+    },
+    "./node_modules/vue/dist/vue.common.js": {
+      "id": 2,
+      "meta": {}
+    },
+    "./node_modules/iview/dist/styles/fonts/ionicons.eot?v=2.0.0": {
+      "id": 3,
+      "meta": {}
+    },
+    "./node_modules/iview/dist/iview.js": {
+      "id": 4,
+      "meta": {}
+    },
+    "./node_modules/iview/dist/styles/iview.css": {
+      "id": 5,
+      "meta": {}
+    },
+    "./node_modules/vue-resource/dist/vue-resource.esm.js": {
+      "id": 6,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default",
+        "Url",
+        "Http",
+        "Resource"
+      ]
+    },
+    "./node_modules/vue-router/dist/vue-router.esm.js": {
+      "id": 7,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/css-loader/index.js!./node_modules/iview/dist/styles/iview.css": {
+      "id": 8,
+      "meta": {}
+    },
+    "./node_modules/css-loader/lib/css-base.js": {
+      "id": 9,
+      "meta": {}
+    },
+    "./node_modules/iview/dist/styles/fonts/ionicons.svg?v=2.0.0": {
+      "id": 10,
+      "meta": {}
+    },
+    "./node_modules/iview/dist/styles/fonts/ionicons.ttf?v=2.0.0": {
+      "id": 11,
+      "meta": {}
+    },
+    "./node_modules/iview/dist/styles/fonts/ionicons.woff?v=2.0.0": {
+      "id": 12,
+      "meta": {}
+    },
+    "./node_modules/setimmediate/setImmediate.js": {
+      "id": 13,
+      "meta": {}
+    },
+    "./node_modules/style-loader/addStyles.js": {
+      "id": 14,
+      "meta": {}
+    },
+    "./node_modules/timers-browserify/main.js": {
+      "id": 15,
+      "meta": {}
+    }
+  }
+}

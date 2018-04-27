@@ -1,0 +1,30 @@
+/* reveal-modal */
+.reveal-modal-bg{position:fixed;height:100%;width:100%;background-color:#000;z-index:100;display:none;top:0;left:0;}
+.reveal-modal{visibility:hidden;top:100px;left:50%;margin-left:-250px;width:420px;background:#eee url(modal-gloss.png) no-repeat -200px -80px;position:absolute;z-index:101;padding:30px 40px 34px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:0 0 10px rgba(0,0,0,.4);-webkit-box-shadow:0 0 10px rgba(0,0,0,.4);-box-shadow:0 0 10px rgba(0,0,0,.4);}
+.reveal-modal .close-reveal-modal {
+font-size:22px;line-height:.5;position:absolute;top:8px;right:11px;color:#aaa;text-shadow:0 -1px 1px rbga(0,0,0,.6);font-weight:bold;cursor:pointer;} 
+.reveal-modal h2{font-size:18px;color:#990000;padding:0 0 20px 0;}
+.reveal-modal p{padding:0 0 15px 0;}
+
+/* 相关产品表格样式 */
+.btn-relative-pdt,.btn-relative-album,.btn-relative-album:hover,
+.btn-relative-pdt:hover{
+	text-decoration: none;
+}
+.btn-relative-pdt,.btn-relative-album {
+	display: block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #2fa933;
+	color: #fff;
+}
+.relative_pdt,.relative_album {
+	margin: 0;
+	width: 80%;
+}
+.relative_pdt th,.relative_album th,
+.relative_pdt td,.relative_album td{
+	text-align: center;
+}

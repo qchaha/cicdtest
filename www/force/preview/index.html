@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta http-equiv=pragma content=no-cache><title>美甲帮</title><meta id=share-image-only property=og:share_image_only name=share-image-only content=0><meta id=share-enable property=og:share-enable name=share-enable content=1><meta id=share-title property=og:title name=title content=美甲帮><meta id=share-text property=og:description name=description content=美甲帮，推荐给你去看看吧^_^><meta id=share-image property=og:image name=image content=https://m.meijiabang.cn/img/icon180.jpg><meta id=share-link property=og:url name=share-link content=""><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=apple-touch-fullscreen content=yes><meta name=format-detection content="telephone=no, email=no"><style>body {
+		margin: 0
+	}
+
+	body::before {
+		content: "1";
+		height: 1px;
+		overflow: hidden;
+		color: transparent;
+		display: block
+	}</style><script src=lib/vue.runtime.js></script><script src=lib/weex-vue-render.js></script></head><body><div id=root></div><script>(function () {
+	/*	function getUrlParam (key) {
+			var reg = new RegExp('[?|&]' + key + '=([^&]+)')
+			var match = location.search.match(reg)
+			return match && match[1]
+		}
+
+		var page = getUrlParam('page')
+		var env = getUrlParam('env')
+		var baseUrl = '//m.meijiabang.cn/force'
+		if (env === 'local') {
+			baseUrl = '//f.meijiabang.cn'
+		}
+		if (page) {
+			var bundle = document.createElement('script')
+			// only for web
+			bundle.src = baseUrl + '/web/' + page + '.js?_v=' + new Date().getTime()
+			document.body.appendChild(bundle)
+		}*/
+
+		// 兼容onBridgeReady
+		if (/meijiabang/ig.test(window.navigator.userAgent)) {
+			window.onBridgeReady = function () {
+
+			}
+		}
+
+		var baseUrl = '//m.meijiabang.cn/force'
+		var bundle = document.createElement('script')
+		// 简单清除js缓存
+		bundle.src = baseUrl + '/preview/preview.js?_v=' + new Date().getTime()
+		document.body.appendChild(bundle)
+	})()</script></body></html>

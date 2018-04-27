@@ -1,0 +1,311 @@
+@CHARSET "UTF-8";
+.tagsBox {
+    display: none;
+    width: 520px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 99;
+    padding: 4px 4px 4px 210px;
+    /*阴影*/
+    -webkit-box-shadow: 4px 4px 20px #aaa;
+    -moz-box-shadow: 4px 4px 20px #aaa;
+    box-shadow: 4px 4px 20px #aaa;
+    /*圆角*/
+    -moz-border-radius: 6px; /* Gecko browsers */
+    -webkit-border-radius: 6px; /* Webkit browsers */
+    border-radius: 6px; /* W3C syntax */
+}
+
+.tagsBox .score_grade {
+    font-size: 12px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+/*评精 start*/
+.tagsBox .appraise {
+    width: 100%;
+    padding: 20px 70px;
+}
+
+.tagsBox .appraise a,
+.tagsBox .appraise input {
+    position: absolute;
+    top: 10px;
+}
+
+.tagsBox .appraise .appraise-radio {
+    width: 70px;
+    height: 40px;
+    z-index: 999;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0;
+}
+
+.tagsBox .appraise .appraise-radio:checked + a {
+    color: #fff;
+    background-color: rgb(255, 103, 154);
+}
+
+.tagsBox .appraise a {
+    color: rgb(255, 103, 154);
+    border: 1px solid rgb(255, 103, 154);
+    text-decoration: none;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 99;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.appraise-5,
+.appraise-5 + a {
+    left: 160px;
+}
+
+.foot-icon {
+    opacity: 0;
+}
+
+.tagsBox .appraise-notice {
+}
+
+.tagsBox .appraise-notice:before {
+    position: absolute;
+    text-align: center;
+    bottom: 110%;
+    left: 40px;
+    content: "请选择评精等级";
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(255, 103, 154, 0.6);
+    color: #fff;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+
+}
+
+.tagsBox .appraise-notice .foot-icon {
+    position: absolute;
+    left: 60px;
+    top: -6px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-width: 15px;
+    border-top-color: rgba(255, 103, 154, 0.6);
+    opacity: 1;
+
+}
+
+.grade-img-4:before {
+    content: "优";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 98;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(255, 103, 154, 0.8);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.grade-img-5:before {
+    content: "精";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 98;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(255, 103, 154, 0.8);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*评精 end*/
+.tagsBox .submit {
+    text-align: center;
+}
+
+.tagsBox .score_grade .topic_tags {
+}
+
+.tagsBox .score_grade input {
+    width: 250px;
+    border: 1px solid rgb(255, 103, 154)
+}
+
+.tagsBox .score_grade p {
+    color: #444;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tagsBox .score_grade button {
+    background: rgb(255, 103, 154);
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    -moz-border-radius: 4px; /* Gecko browsers */
+    -webkit-border-radius: 4px; /* Webkit browsers */
+    border-radius: 4px; /* W3C syntax */
+    color: #eee;
+    margin: 0 auto;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.tagsBox .score_grade span {
+    background: rgb(255, 103, 154);
+    color: #eee;
+}
+
+.tagsBox .score_grade em {
+    font-size: 12px;
+    font-weight: bold;
+    color: #DD5400;
+}
+
+.actions {
+    display: none;
+    position: relative;
+    z-index: 101;
+    top: 0;
+}
+
+.actions a.comment-btn {
+    left: 76px;
+}
+
+.actions a.button {
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+    width: 35px;
+    height: 22px;
+    line-height: 14px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.actions a.favourite-btn {
+    left: 147px;
+}
+
+.actions a.edit-btn {
+    left: 147px;
+}
+
+.actions a.edit-btn {
+    background-position: left -186px;
+}
+
+a.button {
+    background-image: url(/tpl/blackred/images/link.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    line-height: 29px;
+    color: black;
+    display: inline-block;
+    width: 35px;
+    zoom: 1;
+    _background-image: url(/tpl/blackred/images/link.gif);
+}
+
+.postcomment {
+    display: none;
+    border-top: 1px solid #ccc;
+    margin-top: 8px;
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 250px;
+    background: white;
+    height: 92px;
+}
+
+.postcomment .title {
+    padding: 4px 2px;
+}
+
+.postcomment .comment_input {
+    padding: 2px;
+}
+
+.postcomment .submit {
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 60px;
+}
+
+.pic_up {
+    position: relative;
+    z-index: 100;
+}
+
+.box_show {
+    display: block;
+}
+
+.left_box {
+    left: -8px;
+    top: -16px;
+}
+
+.right_box {
+    top: -16px;
+    padding: 4px 210px 4px 4px;
+    -webkit-box-shadow: -4px 4px 20px #aaa;
+    -moz-box-shadow: -4px 4px 20px #aaa;
+    box-shadow: -4px 4px 20px #aaa;
+}
+
+.imgbox .point {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+
+    display: block;
+    padding: 10px;
+
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(255, 51, 102, 0.6);
+    cursor: pointer;
+}
+
+.imgbox:hover .point {
+    opacity: 1;
+}

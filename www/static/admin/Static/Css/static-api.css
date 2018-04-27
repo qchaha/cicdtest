@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+ul,li{padding:0px;margin:0px;list-style: none;}
+button {width:30px;}
+td {padding:4px;}
+table {width: 800px;}
+input,textarea {padding:4px;}
+.right {text-align:right;width: 100px;}
+.hrd-4 {width:400px;}
+.remarks {height:100px;width:400px;}
+#data {padding:10px;height:200px;width:600px;}
+.item {list-style-type:none;padding:4px 20px;}
+.key {width:80px;}
+.value {width:300px;}
+.sbt {width:100px;height:30px;}
+.fanwe-body .body-table-div{height:100%}

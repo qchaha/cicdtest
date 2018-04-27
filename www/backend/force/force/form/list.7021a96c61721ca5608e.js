@@ -1,0 +1,1 @@
+webpackJsonp([267],{ZuX4:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default={name:"app",created:function(){location.href="/force"}}},jwfb:function(e,n,t){var u=t("VU/8")(t("ZuX4"),null,null,null);e.exports=u.exports}});

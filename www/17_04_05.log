@@ -1,0 +1,16 @@
+[ 2017-04-05T18:00:30+08:00 ] 0.0.0.0 POST:/v3/inner_service/payment/pay_result_notify
+INFO: [Common\Model\MallOrderModel::handleUserGradeChanged]用户：49949,订单：641915,操作:order_accept,当前等级:30,要升的等级:30
+[ 2017-04-05T18:00:30+08:00 ] 0.0.0.0 POST:/v3/inner_service/payment/pay_result_notify
+INFO: [Common\Model\MallOrder\Listener\GoodsExtraAction::afterPayment]"49949":1,[{"spec_id":"0","action":"3","relation_id":"123","goods_name":"Samueltest","goods_id":258933}]
+[ 2017-04-05T18:00:30+08:00 ] 0.0.0.0 POST:/v3/inner_service/payment/pay_result_notify
+INFO: [Common\Model\MallOrder\Listener\GoodsExtraAction::afterPayment]"49949":2,Common\Model\MallOrder\Listener\GoodsExtraAction\SendCoupon
+[ 2017-04-05T18:00:30+08:00 ] 0.0.0.0 POST:/v3/inner_service/payment/pay_result_notify
+INFO: [Common\Model\MallOrder\Listener\GoodsExtraAction::afterPayment]"49949":3,afterPayment
+[ 2017-04-05T18:00:31+08:00 ] 0.0.0.0 POST:/v3/inner_service/payment/pay_result_notify
+INFO: [Common\Model\MallOrder\Listener\GoodsExtraAction::afterPayment]"49949":4,{"spec_id":"0","action":"3","relation_id":"123","goods_name":"Samueltest","goods_id":258933}
+[ 2017-04-05T18:00:32+08:00 ] 0.0.0.0 POST:/v3/inner_service/payment/pay_result_notify
+INFO: [Common\Model\PaymentModel::handlePaymentResultNotify]商户订单号:test1709462967,交易号:4000972001201703234342013700,操作结果:处理成功,支付方式:wechatpay_app
+[ 2017-04-05T18:00:34+08:00 ] 0.0.0.0 POST:/v3/inner_service/payment/pay_result_notify
+INFO: [Common\Model\PaymentModel::handlePaymentResultNotify]商户订单号:test1709462967,交易号:4000972001201703234342013700,操作结果:处理失败,支付方式:wechatpay_app
+[ 2017-04-05T18:00:35+08:00 ] 0.0.0.0 POST:/v3/inner_service/payment/pay_result_notify
+INFO: [Common\Model\PaymentModel::handlePaymentResultNotify]商户订单号:test1709462967,交易号:4000972001201703234342013700,操作结果:处理失败,支付方式:wechatpay_app
