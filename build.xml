@@ -1,11 +1,11 @@
 <project name="name-of-project" default="full-build">
-<!--  By default, we assume all tools to be on the $PATH  -->
+<!--  By default, we assume all tools to be on the $PATH  
 <property name="pdepend" value="pdepend"/>
 <property name="phpcpd" value="phpcpd"/>
 <property name="phpcs" value="phpcs"/>
 <property name="phploc" value="phploc"/>
 <property name="phpmd" value="phpmd"/>
-<property name="phpunit" value="phpunit"/>
+<property name="phpunit" value="phpunit"/>-->
 <!--
  Use this when the tools are located as PHARs in ${basedir}/build/tools
  <property name="pdepend" value="${basedir}/build/tools/pdepend.phar"/>
