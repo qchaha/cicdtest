@@ -1,1 +1,0 @@
-define("component/app-route-picker",["common/util"],function(n){"use strict";function o(n){n=n||$(document);var o=n.find('[data-component="'+t+'"]');o.each(function(n,o){$(o).appRoutePicker()})}var t=(n("common/util"),"app-route-picker");return o});

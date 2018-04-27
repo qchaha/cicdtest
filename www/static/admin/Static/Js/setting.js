@@ -1,1 +1,0 @@
-var SETTING = {"share_goods_count":"3","share_index_page":"30","share_search_page":"10","share_self_page":"10","share_pic_count":"50","share_tag_count":"10"};
